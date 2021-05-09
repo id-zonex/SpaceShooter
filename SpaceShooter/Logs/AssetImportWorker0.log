@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.2/staging' branch; Version is '2020.2.5f1 (e2c53f129de5) revision 14861631'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Enterprise LTSC 2019; OS build 17763.1879; Version 1809; 64bit' Language: 'ru' Physical Memory: 8094 MB
+OS: 'Windows 7  (6.1.0) 64bit' Language: 'ru' Physical Memory: 5335 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,88 +11,1510 @@ C:\Program Files\Unity\Hub\Editor\2020.2.5f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-P:/_Unity_Projects_/SpaceShooter
+C:/Users/tester/SpaceShooter/SpaceShooter
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-1638
-Successfully changed project path to: P:/_Unity_Projects_/SpaceShooter
-P:/_Unity_Projects_/SpaceShooter
+49592
+Successfully changed project path to: C:/Users/tester/SpaceShooter/SpaceShooter
+C:/Users/tester/SpaceShooter/SpaceShooter
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 76.92 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 120.65 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.5f1 (e2c53f129de5)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path P:/_Unity_Projects_/SpaceShooter/Assets
+[Subsystems] Discovering subsystems at path C:/Users/tester/SpaceShooter/SpaceShooter/Assets
 GfxDevice: creating device client; threaded=0
+d3d11: CreateDXGIFactory2(...) not found, fallbacking to CreateDXGIFactory1(...).
+d3d11: QueryInterface(IDXGIFactory5) failed (80004002).
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce 940M (ID=0x139c)
+    Renderer: AMD Radeon HD 8650G (ID=0x990b)
     Vendor:   
-    VRAM:     2019 MB
-    Driver:   23.21.13.8857
+    VRAM:     738 MB
+    Driver:   15.201.2001.0
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56004
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56396
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002231 seconds.
+Registered in 0.002445 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 67.01 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 109.45 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.065 seconds
+- Completed reload, in  2.998 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001029 seconds.
+Registered in 0.002293 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 107.67 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 123.47 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.100 seconds
+- Completed reload, in  1.999 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.58 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1895 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 87.0 MB.
-System memory in use after: 87.1 MB.
+System memory in use before: 89.4 MB.
+System memory in use after: 89.5 MB.
 
 Unloading 32 unused Assets to reduce memory usage. Loaded Objects now: 2328.
-Total: 7.139400 ms (FindLiveObjects: 0.226300 ms CreateObjectMapping: 0.090300 ms MarkObjects: 6.721300 ms  DeleteObjects: 0.099300 ms)
+Total: 4.134789 ms (FindLiveObjects: 0.476428 ms CreateObjectMapping: 0.131315 ms MarkObjects: 3.405579 ms  DeleteObjects: 0.119415 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Editor/com.unity.mobile.notifications
-  artifactKey: Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/com.unity.mobile.notifications using Guid(8d94ea3741ad8d344a76cca0aa62f67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3db7e48ea48a5d7a199a2f24997d94a') in 0.005212 seconds
-  Import took 0.011999 seconds .
+  path: Assets/Sprites/Space-shooter-2d-game-backgrounds/Space_BG_01
+  artifactKey: Guid(727fd79868657dc4385c428215bf0f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Space-shooter-2d-game-backgrounds/Space_BG_01 using Guid(727fd79868657dc4385c428215bf0f47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78cb70599c1e3f0e4a0601b353bf29cd') in 0.018789 seconds
+  Import took 0.024657 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset
-  artifactKey: Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor/com.unity.mobile.notifications/NotificationSettings.asset using Guid(4cee8bca36f2ab74b8feb832747fa6f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509a1eb563d7a1f509da95eef6a8e3af') in 0.060910 seconds
-  Import took 0.065412 seconds .
+  Time since last request: 0.000488 seconds.
+  path: Assets/Sprites/Space-shooter-2d-game-backgrounds/Space_BG_01/Space_BG_01.png
+  artifactKey: Guid(59d08b45f901f3d41b63cc486dbdd3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Space-shooter-2d-game-backgrounds/Space_BG_01/Space_BG_01.png using Guid(59d08b45f901f3d41b63cc486dbdd3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68611f1864beb9c50d550ea79caddf8b') in 0.513714 seconds
+  Import took 0.519097 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Editor
-  artifactKey: Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Editor using Guid(d98ad1674ee8d5040ad22d07feddcab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '737a4008e53681e5f68cdf3c1e9b3876') in 0.001373 seconds
-  Import took 0.006145 seconds .
+  Time since last request: 9.861520 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png
+  artifactKey: Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png using Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6690a8dae550110f3511b76a39428052') in 0.116175 seconds
+  Import took 0.123294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_3.png
+  artifactKey: Guid(ead82ba4311254141a5835a12c1a6348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_3.png using Guid(ead82ba4311254141a5835a12c1a6348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73b2d37f98867ef6b5e17334f66b3a3a') in 0.181350 seconds
+  Import took 0.187186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png
+  artifactKey: Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png using Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f68a201af924dbd5882322d46b88a0f8') in 0.125891 seconds
+  Import took 0.131973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000461 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_5.png
+  artifactKey: Guid(800db79b644566f448d9731b9cee144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_5.png using Guid(800db79b644566f448d9731b9cee144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ffb58df3710961324aa5fd56888464') in 0.107201 seconds
+  Import took 0.131263 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000494 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_4.png
+  artifactKey: Guid(4de7fc8384d4d88428e9fcae9e759170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_4.png using Guid(4de7fc8384d4d88428e9fcae9e759170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cece0a97798ec5fa676e8951a54321c') in 0.096686 seconds
+  Import took 0.102958 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.666392 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png
+  artifactKey: Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png using Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757164ed91038441c670661a6ae58a19') in 0.040214 seconds
+  Import took 0.047703 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 2.364334 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.99 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in 23.537 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.06 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1889 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.1 MB.
+System memory in use after: 92.2 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2347.
+Total: 10.595909 ms (FindLiveObjects: 0.722644 ms CreateObjectMapping: 0.164554 ms MarkObjects: 9.650028 ms  DeleteObjects: 0.054578 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 10.22 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.2 MB.
+System memory in use after: 55.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2347.
+Total: 4.466770 ms (FindLiveObjects: 0.478890 ms CreateObjectMapping: 0.130495 ms MarkObjects: 3.812245 ms  DeleteObjects: 0.042677 ms)
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 12.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 18 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 55.2 MB.
+System memory in use after: 55.3 MB.
+
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2347.
+Total: 5.031015 ms (FindLiveObjects: 0.475607 ms CreateObjectMapping: 0.158399 ms MarkObjects: 4.351459 ms  DeleteObjects: 0.043088 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2225.925147 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png
+  artifactKey: Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png using Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81ded46cfe809cc678c3e32c1db6e9b') in 0.555463 seconds
+  Import took 0.563709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001450 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_3.png
+  artifactKey: Guid(ead82ba4311254141a5835a12c1a6348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_3.png using Guid(ead82ba4311254141a5835a12c1a6348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004223065d56ac29b334fa684dfd3df6') in 0.301297 seconds
+  Import took 0.307475 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000442 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png
+  artifactKey: Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png using Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff46ad6fecb755054018db70bb35364') in 0.219047 seconds
+  Import took 0.225409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_5.png
+  artifactKey: Guid(800db79b644566f448d9731b9cee144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_5.png using Guid(800db79b644566f448d9731b9cee144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636d39d90710400beba28a3fe0702d3b') in 0.173179 seconds
+  Import took 0.181490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000643 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png
+  artifactKey: Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_2.png using Guid(c0e888161448ac6438f1157834bcad9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fff46ad6fecb755054018db70bb35364') in 0.072915 seconds
+  Import took 0.079698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000465 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png
+  artifactKey: Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_1.png using Guid(085660c9687f41c4fac0d4c1339dda47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81ded46cfe809cc678c3e32c1db6e9b') in 0.037040 seconds
+  Import took 0.043318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000567 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_4.png
+  artifactKey: Guid(4de7fc8384d4d88428e9fcae9e759170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Ship_LVL_4.png using Guid(4de7fc8384d4d88428e9fcae9e759170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8bd9eb895ce667e2037360721f95051') in 0.113008 seconds
+  Import took 0.119525 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002463 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.709 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.78 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1889 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2351.
+Total: 3.982545 ms (FindLiveObjects: 0.464117 ms CreateObjectMapping: 0.118594 ms MarkObjects: 3.362901 ms  DeleteObjects: 0.034470 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 478.500097 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f2a2471e7245fbc0aa931fa5cf45b7') in 0.025396 seconds
+  Import took 0.032075 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.500637 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(960a98f477d09db4faac0a58859e336c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(960a98f477d09db4faac0a58859e336c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55da39171078029f9ee5efbdc9d79cee') in 0.014670 seconds
+  Import took 0.021729 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.117070 seconds.
+  path: Assets/Scripts/PlayerMover.cs
+  artifactKey: Guid(ba5223b78c02eb64784f2fe5e16a3c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMover.cs using Guid(ba5223b78c02eb64784f2fe5e16a3c8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af9e42f07f365711cb2ede89c39217de') in 2.689897 seconds
+  Import took 2.695759 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002495 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.678 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.52 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2355.
+Total: 3.971876 ms (FindLiveObjects: 0.441958 ms CreateObjectMapping: 0.123108 ms MarkObjects: 3.367415 ms  DeleteObjects: 0.036522 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.108249 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.678 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.45 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2358.
+Total: 4.007987 ms (FindLiveObjects: 0.454679 ms CreateObjectMapping: 0.140754 ms MarkObjects: 3.373981 ms  DeleteObjects: 0.036112 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002759 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.717 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.3 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2361.
+Total: 3.946433 ms (FindLiveObjects: 0.447293 ms CreateObjectMapping: 0.125570 ms MarkObjects: 3.334176 ms  DeleteObjects: 0.037343 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002758 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.896 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.2 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2364.
+Total: 3.787214 ms (FindLiveObjects: 0.445241 ms CreateObjectMapping: 0.120646 ms MarkObjects: 3.179060 ms  DeleteObjects: 0.041036 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.701 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2367.
+Total: 3.901704 ms (FindLiveObjects: 0.464938 ms CreateObjectMapping: 0.131726 ms MarkObjects: 3.265235 ms  DeleteObjects: 0.037753 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.752 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2370.
+Total: 3.941919 ms (FindLiveObjects: 0.483815 ms CreateObjectMapping: 0.163734 ms MarkObjects: 3.253335 ms  DeleteObjects: 0.038984 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002348 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.689 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2373.
+Total: 3.851640 ms (FindLiveObjects: 0.451396 ms CreateObjectMapping: 0.106283 ms MarkObjects: 3.248821 ms  DeleteObjects: 0.043498 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002287 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.736 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.38 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2376.
+Total: 4.569770 ms (FindLiveObjects: 0.478890 ms CreateObjectMapping: 0.117773 ms MarkObjects: 3.926326 ms  DeleteObjects: 0.044729 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002994 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.055 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2379.
+Total: 4.044099 ms (FindLiveObjects: 0.452627 ms CreateObjectMapping: 0.120236 ms MarkObjects: 3.435535 ms  DeleteObjects: 0.033650 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002354 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.849 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.3 MB.
+System memory in use after: 92.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2382.
+Total: 4.068310 ms (FindLiveObjects: 0.471914 ms CreateObjectMapping: 0.124339 ms MarkObjects: 3.428559 ms  DeleteObjects: 0.041446 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 2150.646841 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(f75c0907c9e591c4f9f8880bb82cc58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(f75c0907c9e591c4f9f8880bb82cc58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd831dabb10065426f347fab940eab26') in 0.022219 seconds
+  Import took 0.029229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005328 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(f75c0907c9e591c4f9f8880bb82cc58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(f75c0907c9e591c4f9f8880bb82cc58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd831dabb10065426f347fab940eab26') in 0.007972 seconds
+  Import took 0.015548 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.115676 seconds.
+  path: Assets/Animations/Ship.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '438ac90af9b26461ddd10ff0471721bf') in 0.055278 seconds
+  Import took 0.097291 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.626935 seconds.
+  path: Assets/Animations/Ship.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '626f9bb3eaaba868cbe638a640e03c5f') in 0.011992 seconds
+  Import took 0.035664 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.348905 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_000.png
+  artifactKey: Guid(abe33c807e44568439bf1c5658d5bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_000.png using Guid(abe33c807e44568439bf1c5658d5bc2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28d4649409a25d7090427248c5f2a35') in 0.240515 seconds
+  Import took 0.297772 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000439 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_006.png
+  artifactKey: Guid(7b8d35de34dad6243965d42fca59f54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_006.png using Guid(7b8d35de34dad6243965d42fca59f54c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4097d0e018d27990dd9ad48ce8c0bf9c') in 0.158547 seconds
+  Import took 0.212046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_001.png
+  artifactKey: Guid(425888366248ed642969d0b2cfd1542f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_001.png using Guid(425888366248ed642969d0b2cfd1542f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734edeba758cd0f355443938e6e607dc') in 0.188261 seconds
+  Import took 0.222095 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000758 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_003.png
+  artifactKey: Guid(ca23c95b36d37d147af9ca22ef0fe1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_003.png using Guid(ca23c95b36d37d147af9ca22ef0fe1a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b60cae780b858def152358ccb3a12173') in 0.843612 seconds
+  Import took 0.882813 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000545 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_003.png
+  artifactKey: Guid(959a49637fcce654abb51cd1fa256277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_003.png using Guid(959a49637fcce654abb51cd1fa256277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3443e246160aaf9c004026f9110d2dc8') in 0.363218 seconds
+  Import took 0.390727 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_009.png
+  artifactKey: Guid(b794e4c0f2e2b164b82a11a8315ce146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_009.png using Guid(b794e4c0f2e2b164b82a11a8315ce146) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1e6f5c4ed1e1fe9479d0dab5e1e59c') in 0.400783 seconds
+  Import took 0.473186 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000875 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_009.png
+  artifactKey: Guid(25361d26038d8da48a0c5dec598aff40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_009.png using Guid(25361d26038d8da48a0c5dec598aff40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c874431a8a2a8ca6a93f2447a0ffd597') in 0.212362 seconds
+  Import took 0.257131 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000495 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_004.png
+  artifactKey: Guid(7bd26b8b92ad279498e7b111153ad2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_004.png using Guid(7bd26b8b92ad279498e7b111153ad2d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6bfcb507f16dd10782de30c284bec1') in 0.278110 seconds
+  Import took 0.322936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000902 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_005.png
+  artifactKey: Guid(2bb91a25060c0c349b6720249202e917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_005.png using Guid(2bb91a25060c0c349b6720249202e917) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42292b889d3a58715f257a1815c5d97') in 0.383366 seconds
+  Import took 0.392049 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000481 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_004.png
+  artifactKey: Guid(80a9d6ab08092f444a4cfaa26b722677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_004.png using Guid(80a9d6ab08092f444a4cfaa26b722677) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec92e45e9168505a1326e14f5960ad7f') in 0.287664 seconds
+  Import took 0.311365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000553 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_004.png
+  artifactKey: Guid(492f88f0d986a9d4cb267df894ea2195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_004.png using Guid(492f88f0d986a9d4cb267df894ea2195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '454bf4b5309e2081bb044f64b0eb47d9') in 0.264135 seconds
+  Import took 0.269481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000885 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_009.png
+  artifactKey: Guid(b83c845795cd2434aa2d4d93bb4e6eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_009.png using Guid(b83c845795cd2434aa2d4d93bb4e6eda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44733cae6642d8ad4ead5b63970ca151') in 0.295855 seconds
+  Import took 0.346593 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000516 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_000.png
+  artifactKey: Guid(467798c5be82a094caef4ac0d5ff00db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_000.png using Guid(467798c5be82a094caef4ac0d5ff00db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '193301586377d28f123128b4bf8680cc') in 0.293831 seconds
+  Import took 0.331991 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000603 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_005.png
+  artifactKey: Guid(588afe55edc625e4b9eee82e63a10518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_005.png using Guid(588afe55edc625e4b9eee82e63a10518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf43fc0fab9e5f3001bb5d5eb3375f03') in 0.528859 seconds
+  Import took 0.630968 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000705 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_009.png
+  artifactKey: Guid(dae3e1f1ee021d4448dd190936e61d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_009.png using Guid(dae3e1f1ee021d4448dd190936e61d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3437d941687c3432faf67d05e6209c') in 3.413465 seconds
+  Import took 3.437860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000501 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_003.png
+  artifactKey: Guid(6a6affa3d9e02404d91601b1542de156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_003.png using Guid(6a6affa3d9e02404d91601b1542de156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0be1819d5ffee333dd61f0b88b531005') in 0.327704 seconds
+  Import took 0.353118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000670 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_008.png
+  artifactKey: Guid(d72dfcacce4c0ec47ac77ab8ef091909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_008.png using Guid(d72dfcacce4c0ec47ac77ab8ef091909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bab5838ef280ea32473f0f98539520d5') in 1.820833 seconds
+  Import took 1.826696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000585 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_007.png
+  artifactKey: Guid(0aa6e21d996d1884c9eae645f96bedd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_007.png using Guid(0aa6e21d996d1884c9eae645f96bedd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66ac2c2c910e79304c2a614506d625dc') in 0.879149 seconds
+  Import took 0.885204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000535 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_001.png
+  artifactKey: Guid(531b59c36453e104a957be22449047f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_001.png using Guid(531b59c36453e104a957be22449047f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ece4228b518bfd27f0b1a055371c1c3') in 0.336506 seconds
+  Import took 0.366777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000562 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_000.png
+  artifactKey: Guid(48e296bf6cd16874a8602d56a7f45082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_000.png using Guid(48e296bf6cd16874a8602d56a7f45082) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f600ee7db8c4a4b1ad775e106089dda5') in 0.233814 seconds
+  Import took 0.254571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000556 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_004.png
+  artifactKey: Guid(8cc6f6af71d31c940836f92c81c8b539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_004.png using Guid(8cc6f6af71d31c940836f92c81c8b539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c4e0631f6f10b0cc4f81417a829250a') in 0.235868 seconds
+  Import took 0.313364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000510 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_002.png
+  artifactKey: Guid(069364689abfc8846a82d5172fb89313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_002.png using Guid(069364689abfc8846a82d5172fb89313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d86a0034076e9a75914fa37fb98152') in 0.379111 seconds
+  Import took 0.446995 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000898 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_007.png
+  artifactKey: Guid(d1581e802097faf429e15080e37e36bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_007.png using Guid(d1581e802097faf429e15080e37e36bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c059b68d9311f5fb7030ee9119594872') in 0.311432 seconds
+  Import took 0.417761 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000636 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_007.png
+  artifactKey: Guid(ae10011bd16d8ae4ca81916cdc84ed9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_007.png using Guid(ae10011bd16d8ae4ca81916cdc84ed9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7acb310e01276dd6a97d5ff6e991bafa') in 0.192776 seconds
+  Import took 0.214366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000469 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_000.png
+  artifactKey: Guid(f8cd63aaeee361942b2d95a6140551b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_000.png using Guid(f8cd63aaeee361942b2d95a6140551b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e607dc3d5057b16f8285776713c93c6') in 0.369591 seconds
+  Import took 0.405358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000540 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_006.png
+  artifactKey: Guid(7610d7b6fdbacca4486514ce2d5f435a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_006.png using Guid(7610d7b6fdbacca4486514ce2d5f435a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0ec5e268998ed603ba3e40bc5cbdbb') in 0.280958 seconds
+  Import took 0.393242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_002.png
+  artifactKey: Guid(17c3243de5d3df14c98544c6498d3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_002.png using Guid(17c3243de5d3df14c98544c6498d3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47621d4a663fef85603fff0c69d81d0f') in 0.637224 seconds
+  Import took 0.695967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_003.png
+  artifactKey: Guid(cc14dad358075354cb9afd6fc77ab3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_003.png using Guid(cc14dad358075354cb9afd6fc77ab3ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e3ea424d9cc4f359c11c0dff5874b1') in 0.289166 seconds
+  Import took 0.294885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000500 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_006.png
+  artifactKey: Guid(07c63ff487926274581760b95ab3ebb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_006.png using Guid(07c63ff487926274581760b95ab3ebb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31620782d54aed68c09b2351dd1e8332') in 0.606516 seconds
+  Import took 0.612342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000560 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_000.png
+  artifactKey: Guid(03dcf20167af515469e47371dfd8a00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_000.png using Guid(03dcf20167af515469e47371dfd8a00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf094979dca2d245ddf5ee26b392407') in 0.335036 seconds
+  Import took 0.340692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000584 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_007.png
+  artifactKey: Guid(f15b7ab03e1e34940a333972621322da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_007.png using Guid(f15b7ab03e1e34940a333972621322da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1096d9774fe305b4f052adbc03b025fc') in 0.349458 seconds
+  Import took 0.420631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000868 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_008.png
+  artifactKey: Guid(fa5dd17c8b963ab4295982a71fa1242b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_008.png using Guid(fa5dd17c8b963ab4295982a71fa1242b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd3ddb2e99507f0bd9c2a39bda46db0') in 0.513022 seconds
+  Import took 0.575171 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000506 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_006.png
+  artifactKey: Guid(f3789a6bb463c8b419588723f2423641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_006.png using Guid(f3789a6bb463c8b419588723f2423641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec4293ca374a29a58c5a25c65f094eac') in 0.916725 seconds
+  Import took 0.923503 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000423 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_002.png
+  artifactKey: Guid(462b040f0573e034ba2c381bc3da7672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_002.png using Guid(462b040f0573e034ba2c381bc3da7672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279b70c8ff65ca6126e6545db8ccae2d') in 0.180963 seconds
+  Import took 0.205782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_009.png
+  artifactKey: Guid(c3e4ddf2e91662d4ea9a28ab85c415d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_009.png using Guid(c3e4ddf2e91662d4ea9a28ab85c415d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ca27546b0a56ebeb1cf3b933c1adda') in 0.299464 seconds
+  Import took 0.305472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_007.png
+  artifactKey: Guid(b96804b4ed1ef4a42be9952d1133a7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_007.png using Guid(b96804b4ed1ef4a42be9952d1133a7cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a034e305660ba4a81f7d3a88071002ba') in 2.907021 seconds
+  Import took 2.913789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000582 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_009.png
+  artifactKey: Guid(c3e4ddf2e91662d4ea9a28ab85c415d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_009.png using Guid(c3e4ddf2e91662d4ea9a28ab85c415d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ca27546b0a56ebeb1cf3b933c1adda') in 0.043326 seconds
+  Import took 0.050569 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_005.png
+  artifactKey: Guid(7b2fa75d58a1da546a44e479601cfbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_2_005.png using Guid(7b2fa75d58a1da546a44e479601cfbf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9945f0b7a4a4ed63addb3e0144d9463') in 0.355294 seconds
+  Import took 0.387204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000632 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_001.png
+  artifactKey: Guid(494d07c62e181d5448295c517a813700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_001.png using Guid(494d07c62e181d5448295c517a813700) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2627005ae848e947b085b060662a60') in 0.669540 seconds
+  Import took 0.700528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000524 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_002.png
+  artifactKey: Guid(d78776fd5028aa84facd7d7c1b9d88e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_002.png using Guid(d78776fd5028aa84facd7d7c1b9d88e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3b72f1d28d0048d4af0526c56d2c8df') in 0.274979 seconds
+  Import took 0.322951 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_001.png
+  artifactKey: Guid(4f66a57a954155a42959ce0cf8e6c334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_001.png using Guid(4f66a57a954155a42959ce0cf8e6c334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bca1308b8f19ab8992f6236a101878f') in 0.325667 seconds
+  Import took 0.376321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000514 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_005.png
+  artifactKey: Guid(22cb05971d99779458fe0eb7fd55206e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_005.png using Guid(22cb05971d99779458fe0eb7fd55206e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d716d0914943529ddac6b552574049') in 0.310119 seconds
+  Import took 0.316322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000480 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_008.png
+  artifactKey: Guid(e75803df6b62403459dfe2fcbeb9b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_2_008.png using Guid(e75803df6b62403459dfe2fcbeb9b0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aacf1fdefee68dbb1ed6a187103f364') in 1.257067 seconds
+  Import took 1.262881 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_005.png
+  artifactKey: Guid(bc5d06b743694c542b5b85eba79c9bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_005.png using Guid(bc5d06b743694c542b5b85eba79c9bad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0590c4dec2b06788893b2f7790af34a3') in 0.509129 seconds
+  Import took 0.515841 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000434 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_008.png
+  artifactKey: Guid(44ef50837df654f4b9493d555769f6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_008.png using Guid(44ef50837df654f4b9493d555769f6b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c7a5118b0c6022f2538b0a41bb4f6ca') in 0.388926 seconds
+  Import took 0.412659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000509 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_003.png
+  artifactKey: Guid(609d78eb56819364683ecd74dbe142ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_003.png using Guid(609d78eb56819364683ecd74dbe142ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a3c2e07fe83e9b933d49cd3720bd0a') in 0.952380 seconds
+  Import took 0.958246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000549 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_001.png
+  artifactKey: Guid(85f76834114dd6c4685d8f5ca0d14d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_001.png using Guid(85f76834114dd6c4685d8f5ca0d14d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8f950d48f615e8423dbb357ae0f2e4') in 0.343419 seconds
+  Import took 0.381518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000596 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_006.png
+  artifactKey: Guid(c2d6784b09146214e92f4c813a39f4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_006.png using Guid(c2d6784b09146214e92f4c813a39f4ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9fb1dc9bda2136a6850e7cb8ec090e4') in 0.197818 seconds
+  Import took 0.242452 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000531 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_002.png
+  artifactKey: Guid(5712e8bb68d7b6c448480d18a4b6ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_1_1_002.png using Guid(5712e8bb68d7b6c448480d18a4b6ab91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4a2e0047f73f8df02e6942b8222444') in 0.054300 seconds
+  Import took 0.061258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000579 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_004.png
+  artifactKey: Guid(ae208482908e7c149bbbb3e630f4a9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_1_004.png using Guid(ae208482908e7c149bbbb3e630f4a9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee93d7ab382cdec37400214d6dd5cc15') in 0.381609 seconds
+  Import took 0.447886 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000594 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_008.png
+  artifactKey: Guid(a7f4c9ded40403649b28e269aa09f706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_2_1_008.png using Guid(a7f4c9ded40403649b28e269aa09f706) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd27564ed8b800249bb8847802ca3e0ef') in 0.606179 seconds
+  Import took 0.626169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.885572 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_000.png
+  artifactKey: Guid(20b20e6c93e188146b64ebce1ea74366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_000.png using Guid(20b20e6c93e188146b64ebce1ea74366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed867019b0b3e376d23c8d2815cbba2f') in 0.254333 seconds
+  Import took 0.263817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000604 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_002.png
+  artifactKey: Guid(d1062b4f92779da42a9e6ba1d4b1b51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_002.png using Guid(d1062b4f92779da42a9e6ba1d4b1b51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4f57f774f21456a15df27a2fefd0aa') in 0.254436 seconds
+  Import took 0.260989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000456 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_003.png
+  artifactKey: Guid(dc391b1bea747c94bbaa4e53b2ca4496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_003.png using Guid(dc391b1bea747c94bbaa4e53b2ca4496) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54b014e914d47e88edff3202814ac6b') in 0.240398 seconds
+  Import took 0.246268 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000497 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_001.png
+  artifactKey: Guid(83351951b9392de43800395cea6339df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_001.png using Guid(83351951b9392de43800395cea6339df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ab4717a1878da24e82d6a5a905d658') in 0.271255 seconds
+  Import took 0.297919 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000630 seconds.
+  path: Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_004.png
+  artifactKey: Guid(c7197832761632540ae3f2d768f12140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Spaceship-2d-game-sprites/Ship_01/Exhaust/Exhaust_3_2_004.png using Guid(c7197832761632540ae3f2d768f12140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117bab0a911942bfcff9687e8856f989') in 1.013416 seconds
+  Import took 1.037331 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 92.819071 seconds.
+  path: Assets/Animations/Ship.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889171882842288191a3950ade51f5e5') in 0.047897 seconds
+  Import took 0.085068 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002168 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.726 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2398.
+Total: 3.939047 ms (FindLiveObjects: 0.453448 ms CreateObjectMapping: 0.107104 ms MarkObjects: 3.337869 ms  DeleteObjects: 0.036112 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 13.155088 seconds.
+  path: Assets/Animations/ShipIdle.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipIdle.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2ebdfc6ccfa1e21c689fd613fc52ad1') in 0.042472 seconds
+  Import took 0.053454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.811318 seconds.
+  path: Assets/Animations/ShipLV1Move.anim
+  artifactKey: Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLV1Move.anim using Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3e9f920e55f555e7f3cc657e7817d9') in 0.018453 seconds
+  Import took 0.025251 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.907895 seconds.
+  path: Assets/Animations/ShipLvl1Idle.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLvl1Idle.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b7d1d0e3af9f3206f6f22415d998fe') in 0.019303 seconds
+  Import took 0.026464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.834775 seconds.
+  path: Assets/Animations/ShipLvl1Idle.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLvl1Idle.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c79cafa262c4eab17312167943dcd2f') in 0.007928 seconds
+  Import took 0.016465 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.345995 seconds.
+  path: Assets/Animations/Ship_LVL_1.controller
+  artifactKey: Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship_LVL_1.controller using Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '977a4318739ea4488cc4a33d378388b5') in 0.041680 seconds
+  Import took 0.061929 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.46 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.774 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2401.
+Total: 4.194701 ms (FindLiveObjects: 0.523209 ms CreateObjectMapping: 0.143216 ms MarkObjects: 3.488882 ms  DeleteObjects: 0.037343 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003195 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.98 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.517 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2404.
+Total: 5.356841 ms (FindLiveObjects: 0.723875 ms CreateObjectMapping: 0.167427 ms MarkObjects: 4.404395 ms  DeleteObjects: 0.058271 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003244 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.732 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2407.
+Total: 8.217872 ms (FindLiveObjects: 0.818258 ms CreateObjectMapping: 0.196973 ms MarkObjects: 7.116055 ms  DeleteObjects: 0.082072 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003434 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.03 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.472 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 2.04 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2410.
+Total: 5.651480 ms (FindLiveObjects: 0.696791 ms CreateObjectMapping: 0.170299 ms MarkObjects: 4.725707 ms  DeleteObjects: 0.055399 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 742.527819 seconds.
+  path: Assets/Animations/ShipLvl1Idle.anim
+  artifactKey: Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLvl1Idle.anim using Guid(59eab0b4f5815b14d8a0a6b5dfd3c538) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51cadb25ca343ff45b89ccf3072b6ddb') in 0.029518 seconds
+  Import took 0.099988 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002380 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.43 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.796 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.41 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2413.
+Total: 3.897600 ms (FindLiveObjects: 0.452217 ms CreateObjectMapping: 0.134188 ms MarkObjects: 3.273032 ms  DeleteObjects: 0.036112 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003030 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.775 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.7 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2416.
+Total: 4.036712 ms (FindLiveObjects: 0.463297 ms CreateObjectMapping: 0.117773 ms MarkObjects: 3.415838 ms  DeleteObjects: 0.037343 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002690 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.50 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.833 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2419.
+Total: 4.120016 ms (FindLiveObjects: 0.508847 ms CreateObjectMapping: 0.136650 ms MarkObjects: 3.425276 ms  DeleteObjects: 0.045550 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.886 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.42 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.6 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2422.
+Total: 3.827839 ms (FindLiveObjects: 0.461245 ms CreateObjectMapping: 0.108745 ms MarkObjects: 3.220917 ms  DeleteObjects: 0.034470 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 809.832454 seconds.
+  path: Assets/Animations/Ship_LVL_1.controller
+  artifactKey: Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship_LVL_1.controller using Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae91e139a8f3dd7305260a96f693a3b') in 0.052824 seconds
+  Import took 0.099173 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002305 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.851 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.36 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2425.
+Total: 4.770026 ms (FindLiveObjects: 0.510078 ms CreateObjectMapping: 0.139112 ms MarkObjects: 4.084314 ms  DeleteObjects: 0.033239 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 9.040003 seconds.
+  path: Assets/Animations/Ship_LVL_1.controller
+  artifactKey: Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Ship_LVL_1.controller using Guid(b9477f309d65ff04688cd072c71cf831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '484759b16a26627580110e7f4d8f746e') in 0.029761 seconds
+  Import took 0.047347 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002723 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.51 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.799 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.54 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2428.
+Total: 3.790086 ms (FindLiveObjects: 0.458372 ms CreateObjectMapping: 0.132546 ms MarkObjects: 3.158542 ms  DeleteObjects: 0.038984 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002235 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.824 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.35 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2431.
+Total: 3.842202 ms (FindLiveObjects: 0.480121 ms CreateObjectMapping: 0.117773 ms MarkObjects: 3.201630 ms  DeleteObjects: 0.040626 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002301 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.34 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.832 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2434.
+Total: 3.832353 ms (FindLiveObjects: 0.479711 ms CreateObjectMapping: 0.133367 ms MarkObjects: 3.176187 ms  DeleteObjects: 0.041036 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 235.908713 seconds.
+  path: Assets/Animations/ShipLV1Move.anim
+  artifactKey: Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLV1Move.anim using Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75c767cdc1a91700112779ac15ebb24d') in 0.035570 seconds
+  Import took 0.041841 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002561 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.863 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.33 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2437.
+Total: 3.879955 ms (FindLiveObjects: 0.456731 ms CreateObjectMapping: 0.132136 ms MarkObjects: 3.245128 ms  DeleteObjects: 0.043498 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 20.044321 seconds.
+  path: Assets/Animations/ShipLV1Move.anim
+  artifactKey: Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLV1Move.anim using Guid(8ad46a8b6087dfe43bc65ad4308e37ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06252beaec4ae08f2de8c6e58062842f') in 0.027339 seconds
+  Import took 0.062609 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002588 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.956 seconds
+Platform modules already initialized, skipping
+Switching build target platform(5) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1890 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 92.7 MB.
+System memory in use after: 92.8 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 2440.
+Total: 4.060103 ms (FindLiveObjects: 0.503512 ms CreateObjectMapping: 0.122698 ms MarkObjects: 3.395320 ms  DeleteObjects: 0.036522 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Import Request.
+  Time since last request: 20.497868 seconds.
+  path: Assets/Animations/ShipLV1
+  artifactKey: Guid(c9a88c5869112a6418552b8500d19257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/ShipLV1 using Guid(c9a88c5869112a6418552b8500d19257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f455a58b4486e72b16e8e58e4fc93b') in 0.046547 seconds
+  Import took 0.104363 seconds .
 
