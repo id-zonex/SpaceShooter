@@ -437,7 +437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 912137f58bc81874f80c53b1a3896dc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curve: {fileID: 736705769}
+  bizieCurveMover:
+    bizieCurve: {fileID: 736705769}
   speed: 1
 --- !u!212 &582052490
 SpriteRenderer:
@@ -580,7 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8add6661054434ea7d9f50edfb6223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bizieCurveChank: {fileID: 0}
+  bizieCurveChank: {fileID: 1271019253813753365, guid: 97a5432f67152e84d8692b4c89ad9565, type: 3}
 --- !u!1 &953272221
 GameObject:
   m_ObjectHideFlags: 0

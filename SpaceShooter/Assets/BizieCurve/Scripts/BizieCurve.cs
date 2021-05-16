@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +7,8 @@ public class BizieCurve : MonoBehaviour
 {
     [SerializeField] private BizieCurveChunk bizieCurveChank;
 
-    private List<BizieCurveChunk> _bizieCurveChanks = new List<BizieCurveChunk>();
-    private BizieCurveChunk _getLastChunk => _bizieCurveChanks[_bizieCurveChanks.Count - 1];
+    public List<BizieCurveChunk> BizieCurveChanks { get; private set; } = new List<BizieCurveChunk>();
+    private BizieCurveChunk _getLastChunk => BizieCurveChanks[BizieCurveChanks.Count - 1];
 
     #region const
     private readonly Vector3 DEFAULT_POSITION = Vector3.zero;
@@ -25,16 +26,15 @@ public class BizieCurve : MonoBehaviour
         }
     }
 
-    public Vector3 GetPoint(float time)
+    public Vector3 GetPoint(float time, int currentCurve, out bool isEnd)
     {
-        int currentIndex = (int)(time * 10);
+        currentCurve = Mathf.Clamp(currentCurve, 0, BizieCurveChanks.Count - 1);
 
-        currentIndex = Mathf.Clamp(currentIndex, 0, _bizieCurveChanks.Count - 1);
+        float chunkTime = time;
 
-        float chunkTime = (time / _bizieCurveChanks.Count);
-        BizieCurveChunk chunk = _bizieCurveChanks[currentIndex];
+        BizieCurveChunk chunk = BizieCurveChanks[currentCurve];
 
-        Vector3 point = chunk.GetPoint(chunkTime);
+        Vector3 point = chunk.GetPoint(chunkTime, out isEnd);
 
         return point;
     }
@@ -46,14 +46,14 @@ public class BizieCurve : MonoBehaviour
 
         chunk = SpawnChunk(_getLastChunk.GetLastPoint().position, Quaternion.identity, transform);
 
-        _bizieCurveChanks.Add(chunk);
+        BizieCurveChanks.Add(chunk);
     }
 
     private void SetChunks()
     {
         for (int i = 0; i < transform.childCount; i++)
         {
-            _bizieCurveChanks.Add(transform.GetChild(i).GetComponent<BizieCurveChunk>());
+            BizieCurveChanks.Add(transform.GetChild(i).GetComponent<BizieCurveChunk>());
         }
     }
 
@@ -61,7 +61,7 @@ public class BizieCurve : MonoBehaviour
     private BizieCurveChunk SpawnChunk(Vector3 position, Quaternion rotation, Transform parent)
     {
         BizieCurveChunk chunk = Instantiate(bizieCurveChank, position, rotation, parent);
-        _bizieCurveChanks.Add(chunk);
+        BizieCurveChanks.Add(chunk);
 
         return chunk;
     }
@@ -69,7 +69,7 @@ public class BizieCurve : MonoBehaviour
     private void SpawnChunk()
     {
         BizieCurveChunk chunk = Instantiate(bizieCurveChank, DEFAULT_POSITION, DEFAULT_ROTATION, transform);
-        _bizieCurveChanks.Add(chunk);
+        BizieCurveChanks.Add(chunk);
     }
     #endregion
 }

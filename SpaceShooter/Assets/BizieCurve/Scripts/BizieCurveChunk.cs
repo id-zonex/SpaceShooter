@@ -9,15 +9,13 @@ public class BizieCurveChunk : MonoBehaviour
     [SerializeField] private Transform p4;
     #endregion
 
-    public Vector3 GetPoint(float time)
+    public Vector3 GetPoint(float time, out bool isEnd)
     {
-        time = Mathf.Clamp01(time);
-        float oneMinusT = 1f - time;
+        isEnd = false;
+        Vector3 point = GetPoint(time);
 
-        Vector3 point = oneMinusT * oneMinusT * oneMinusT * p1.position +
-            3f * oneMinusT * oneMinusT * time * p2.position +
-            3f * oneMinusT * time * time * p3.position +
-            time * time * time * p4.position;
+        if (Vector3.Distance(point, p4.position) == 0)
+            isEnd = true;
 
         return point;
     }
@@ -36,6 +34,19 @@ public class BizieCurveChunk : MonoBehaviour
             3f * oneMinusT * oneMinusT * (p2.position - p1.position) +
             6f * oneMinusT * time * (p3.position - p2.position) +
             3f * time * time * (p4.position - p3.position);
+    }
+
+    private Vector3 GetPoint(float time)
+    {
+        time = Mathf.Clamp01(time);
+        float oneMinusT = 1f - time;
+
+        Vector3 point = oneMinusT * oneMinusT * oneMinusT * p1.position +
+            3f * oneMinusT * oneMinusT * time * p2.position +
+            3f * oneMinusT * time * time * p3.position +
+            time * time * time * p4.position;
+
+        return point;
     }
 
     public Transform GetLastPoint() { return p4; }
