@@ -39,7 +39,7 @@ public class BizieCurve : MonoBehaviour
         return point;
     }
 
-
+    [EditorButton("Add")]
     public void SpawnNextChunk()
     {
         BizieCurveChunk chunk;
@@ -47,6 +47,15 @@ public class BizieCurve : MonoBehaviour
         chunk = SpawnChunk(_getLastChunk.GetLastPoint().position, Quaternion.identity, transform);
 
         BizieCurveChanks.Add(chunk);
+    }
+
+    [EditorButton("Remove")]
+    public void Remove()
+    {
+        BizieCurveChanks.Remove(_getLastChunk);
+
+        if (Application.isPlaying)
+            Destroy(_getLastChunk);
     }
 
     private void SetChunks()
