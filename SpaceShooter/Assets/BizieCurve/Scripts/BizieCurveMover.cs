@@ -12,17 +12,17 @@ public class BizieCurveMover
     {
         _time += Time.deltaTime * speed;
 
-        Vector3 point = bizieCurve.GetPoint(_time, _currentIndex, out bool isEnd);
+        var result = bizieCurve.GetPoint(_time, _currentIndex);
 
-        if (isEnd)
+        if (result.isEnd)
         {
             _currentIndex++;
             _time = 0;
         }
 
-        if (_currentIndex >= bizieCurve.BizieCurveChanks.Count)
+        if (_currentIndex >= bizieCurve.SpawnedCurveChanks.Count)
             _currentIndex = 0;
 
-        return point;
+        return result.point;
     }
 }

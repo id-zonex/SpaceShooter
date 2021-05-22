@@ -1,14 +1,15 @@
-using System;
+using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteInEditMode]
 public class BizieCurve : MonoBehaviour
 {
-    [SerializeField] private BizieCurveChunk bizieCurveChank;
+    public List<BizieCurveChunk> SpawnedCurveChanks { get; private set; } = new List<BizieCurveChunk>();
 
-    public List<BizieCurveChunk> BizieCurveChanks { get; private set; } = new List<BizieCurveChunk>();
-    private BizieCurveChunk _getLastChunk => BizieCurveChanks[BizieCurveChanks.Count - 1];
+    private BizieCurveChunk _bizieCurveChank;
+
+    private BizieCurveChunk _getLastChunk => SpawnedCurveChanks[SpawnedCurveChanks.Count - 1];
 
     #region const
     private readonly Vector3 DEFAULT_POSITION = Vector3.zero;
@@ -17,68 +18,66 @@ public class BizieCurve : MonoBehaviour
 
     private void Awake()
     {
-        bizieCurveChank = BizieCurvePrefab.BizieCurveChunkPrefab;
+        _bizieCurveChank = Resources.Load<BizieCurveChunk>("BizieCurveChunk");
+
         SetChunks();
 
         if (transform.childCount == 0)
-        {
             SpawnChunk();
-        }
     }
 
-    public Vector3 GetPoint(float time, int currentCurve, out bool isEnd)
+    public (Vector3 point, bool isEnd) GetPoint(float time, int currentCurve)
     {
-        currentCurve = Mathf.Clamp(currentCurve, 0, BizieCurveChanks.Count - 1);
+        currentCurve = Mathf.Clamp(currentCurve, 0, SpawnedCurveChanks.Count - 1);
+        BizieCurveChunk chunk = SpawnedCurveChanks[currentCurve];
 
-        float chunkTime = time;
-
-        BizieCurveChunk chunk = BizieCurveChanks[currentCurve];
-
-        Vector3 point = chunk.GetPoint(chunkTime, out isEnd);
-
-        return point;
+        return chunk.GetPoint(time);
     }
 
     [EditorButton("Add")]
     public void SpawnNextChunk()
     {
-        BizieCurveChunk chunk;
+        BizieCurveChunk chunk = SpawnChunk(_getLastChunk.GetLastPoint.position, Quaternion.identity, transform);
 
-        chunk = SpawnChunk(_getLastChunk.GetLastPoint().position, Quaternion.identity, transform);
-
-        BizieCurveChanks.Add(chunk);
+        SpawnedCurveChanks.Add(chunk);
     }
 
     [EditorButton("Remove")]
     public void Remove()
     {
-        BizieCurveChanks.Remove(_getLastChunk);
+        if (Application.isPlaying) return;
 
-        if (Application.isPlaying)
-            Destroy(_getLastChunk);
+        SpawnedCurveChanks.Remove(_getLastChunk);
+
+        _getLastChunk.gameObject.SetActive(false);
     }
 
     private void SetChunks()
     {
-        for (int i = 0; i < transform.childCount; i++)
+        foreach (BizieCurveChunk chunk in GetComponentsInChildren<BizieCurveChunk>().Reverse())
         {
-            BizieCurveChanks.Add(transform.GetChild(i).GetComponent<BizieCurveChunk>());
+            if (chunk.gameObject.activeInHierarchy)
+                SpawnedCurveChanks.Add(chunk);
+            else
+                Destroy(chunk);
         }
     }
 
     #region SpawnChunk
     private BizieCurveChunk SpawnChunk(Vector3 position, Quaternion rotation, Transform parent)
     {
-        BizieCurveChunk chunk = Instantiate(bizieCurveChank, position, rotation, parent);
-        BizieCurveChanks.Add(chunk);
+        BizieCurveChunk chunk = Instantiate(_bizieCurveChank, position, rotation, parent);
+        SpawnedCurveChanks.Add(chunk);
 
         return chunk;
     }
 
-    private void SpawnChunk()
+    private BizieCurveChunk SpawnChunk()
     {
-        BizieCurveChunk chunk = Instantiate(bizieCurveChank, DEFAULT_POSITION, DEFAULT_ROTATION, transform);
-        BizieCurveChanks.Add(chunk);
+        BizieCurveChunk chunk = Instantiate(_bizieCurveChank, DEFAULT_POSITION, DEFAULT_ROTATION, transform);
+        SpawnedCurveChanks.Add(chunk);
+
+        return chunk;
     }
     #endregion
 }

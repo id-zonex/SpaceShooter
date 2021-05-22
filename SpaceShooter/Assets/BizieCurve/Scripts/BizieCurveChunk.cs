@@ -9,15 +9,19 @@ public class BizieCurveChunk : MonoBehaviour
     [SerializeField] private Transform p4;
     #endregion
 
-    public Vector3 GetPoint(float time, out bool isEnd)
+    public Transform GetLastPoint => p4;
+
+    public (Vector3 point, bool isEnd) GetPoint(float time)
     {
-        isEnd = false;
-        Vector3 point = GetPoint(time);
+        Vector3 point = GetPointInDistance(time);
+        bool isEnd = HasEnd(point);
 
-        if (Vector3.Distance(point, p4.position) == 0)
-            isEnd = true;
+        return (point, isEnd);
+    }
 
-        return point;
+    public bool HasEnd(Vector3 position)
+    {
+        return Vector3.Distance(position, p4.position) == 0 ? true : false;
     }
 
     public Quaternion GetRotation(float time)
@@ -36,7 +40,7 @@ public class BizieCurveChunk : MonoBehaviour
             3f * time * time * (p4.position - p3.position);
     }
 
-    private Vector3 GetPoint(float time)
+    private Vector3 GetPointInDistance(float time)
     {
         time = Mathf.Clamp01(time);
         float oneMinusT = 1f - time;
@@ -49,10 +53,6 @@ public class BizieCurveChunk : MonoBehaviour
         return point;
     }
 
-    public Transform GetLastPoint() { return p4; }
-
-    public Transform GetFirstPoint() { return p1; }
-
     private void OnDrawGizmos()
     {
         int sigmentsNumber = 20;
@@ -61,7 +61,7 @@ public class BizieCurveChunk : MonoBehaviour
         for (int i = 0; i < sigmentsNumber + 1; i++)
         {
             float paremeter = (float)i / sigmentsNumber;
-            Vector3 point = GetPoint(paremeter);
+            Vector3 point = GetPointInDistance(paremeter);
 
             Gizmos.DrawLine(preveousePoint, point);
 
