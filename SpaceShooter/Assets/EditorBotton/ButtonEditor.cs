@@ -3,30 +3,27 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace Kilosoft.Tools
+[CustomEditor(typeof(Object), true, isFallback = false)]
+[CanEditMultipleObjects]
+public class ButtonEditor : Editor
 {
-    [CustomEditor(typeof(Object), true, isFallback = false)]
-    [CanEditMultipleObjects]
-    public class ButtonEditor : Editor
+    public override void OnInspectorGUI()
     {
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
+        base.OnInspectorGUI();
 
-            foreach (var target in targets)
+        foreach (var target in targets)
+        {
+            var mis = target.GetType().GetMethods().Where(m => m.GetCustomAttributes().Any(a => a.GetType() == typeof(EditorButtonAttribute)));
+            if (mis != null)
             {
-                var mis = target.GetType().GetMethods().Where(m => m.GetCustomAttributes().Any(a => a.GetType() == typeof(EditorButtonAttribute)));
-                if (mis != null)
+                foreach (var mi in mis)
                 {
-                    foreach (var mi in mis)
+                    if (mi != null)
                     {
-                        if (mi != null)
+                        var attribute = (EditorButtonAttribute)mi.GetCustomAttribute(typeof(EditorButtonAttribute));
+                        if (GUILayout.Button(attribute.name))
                         {
-                            var attribute = (EditorButtonAttribute)mi.GetCustomAttribute(typeof(EditorButtonAttribute));
-                            if (GUILayout.Button(attribute.name))
-                            {
-                                mi.Invoke(target, null);
-                            }
+                            mi.Invoke(target, null);
                         }
                     }
                 }

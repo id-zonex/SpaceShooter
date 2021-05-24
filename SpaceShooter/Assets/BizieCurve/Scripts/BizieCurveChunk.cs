@@ -1,16 +1,42 @@
+using System.Collections;
 using UnityEngine;
+using UnityEditor;
 
-public class BizieCurveChunk : MonoBehaviour
+[System.Serializable]
+public class BizieCurveChunk
 {
     #region Editor fields
-    [SerializeField] private Transform p1;
-    [SerializeField] private Transform p2;
-    [SerializeField] private Transform p3;
-    [SerializeField] private Transform p4;
+    public Vector3 P1 = new Vector3(0, 0, 0);
+    public Vector3 P2 = new Vector3(10.5f, 11.8f, 0);
+    public Vector3 P3 = new Vector3(-10.9f, 8.5f, 0);
+    public Vector3 P4 = new Vector3(0, 20, 0);
     #endregion
 
-    public Transform GetLastPoint => p4;
+    #region lambdes
+    public Vector3 GetLastPoint => P4;
+    #endregion
 
+    private Vector3 _pivot = new Vector3(0, 0, 0);
+
+    #region Constructors
+    public BizieCurveChunk(Vector3 pivot)
+    {
+        _pivot = pivot;
+        Initialize();
+    }
+
+    public BizieCurveChunk() { }
+    #endregion
+
+    public void Initialize()
+    {
+        P1 = P1 + _pivot;
+        P2 = P2 + _pivot;
+        P3 = P3 + _pivot;
+        P4 = P4 + _pivot;
+    }
+
+    #region Public bezie methods
     public (Vector3 point, bool isEnd) GetPoint(float time)
     {
         Vector3 point = GetPointInDistance(time);
@@ -21,7 +47,7 @@ public class BizieCurveChunk : MonoBehaviour
 
     public bool HasEnd(Vector3 position)
     {
-        return Vector3.Distance(position, p4.position) == 0 ? true : false;
+        return Vector3.Distance(position, P4) == 0 ? true : false;
     }
 
     public Quaternion GetRotation(float time)
@@ -35,28 +61,18 @@ public class BizieCurveChunk : MonoBehaviour
         float oneMinusT = 1f - time;
 
         return
-            3f * oneMinusT * oneMinusT * (p2.position - p1.position) +
-            6f * oneMinusT * time * (p3.position - p2.position) +
-            3f * time * time * (p4.position - p3.position);
+            3f * oneMinusT * oneMinusT * (P2 - P1) +
+            6f * oneMinusT * time * (P3 - P2) +
+            3f * time * time * (P4 - P3);
     }
+    #endregion
 
-    private Vector3 GetPointInDistance(float time)
-    {
-        time = Mathf.Clamp01(time);
-        float oneMinusT = 1f - time;
-
-        Vector3 point = oneMinusT * oneMinusT * oneMinusT * p1.position +
-            3f * oneMinusT * oneMinusT * time * p2.position +
-            3f * oneMinusT * time * time * p3.position +
-            time * time * time * p4.position;
-
-        return point;
-    }
-
-    private void OnDrawGizmos()
+    #region Editor
+    [DrawGizmo(GizmoType.Active)]
+    public void DrawGizmo()
     {
         int sigmentsNumber = 20;
-        Vector3 preveousePoint = p1.position;
+        Vector3 preveousePoint = P1;
 
         for (int i = 0; i < sigmentsNumber + 1; i++)
         {
@@ -67,5 +83,19 @@ public class BizieCurveChunk : MonoBehaviour
 
             preveousePoint = point;
         }
+    }
+    #endregion
+
+    private Vector3 GetPointInDistance(float time)
+    {
+        time = Mathf.Clamp01(time);
+        float oneMinusT = 1f - time;
+
+        Vector3 point = oneMinusT * oneMinusT * oneMinusT * P1 +
+            3f * oneMinusT * oneMinusT * time * P2 +
+            3f * oneMinusT * time * time * P3 +
+            time * time * time * P4;
+
+        return point;
     }
 }
