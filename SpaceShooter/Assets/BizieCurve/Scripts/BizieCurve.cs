@@ -11,7 +11,7 @@ public class BizieCurve : MonoBehaviour
 
     private void Start()
     {
-        SpawnNextChunk();
+        CheckChunks();
     }
 
     public (Vector3 point, bool isEnd) GetPoint(float time, int currentCurve)
@@ -25,11 +25,7 @@ public class BizieCurve : MonoBehaviour
     #region Editor Buttons
     public void SpawnNextChunk()
     {
-        if (spawnedCurveChanks.Count == 0)
-            SpawnChunk();
-
-        else
-            SpawnChunk(_getLastChunk.GetLastPoint, Quaternion.identity, transform);
+        SpawnChunk(_getLastChunk.GetLastPoint, Quaternion.identity, transform);
     }
 
     public void Remove()
@@ -53,6 +49,12 @@ public class BizieCurve : MonoBehaviour
         spawnedCurveChanks.Add(chunk);
 
         return chunk;
+    }
+
+    private void CheckChunks()
+    {
+        if (spawnedCurveChanks.Count == 0)
+            SpawnChunk();
     }
     #endregion
 
