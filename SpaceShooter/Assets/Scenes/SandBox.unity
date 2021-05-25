@@ -201,22 +201,6 @@ MonoBehaviour:
     P2: {x: 4.5216484, y: 426.12503, z: -384.18088}
     P3: {x: 83.29459, y: 309.97678, z: -384.18088}
     P4: {x: 15.68322, y: 381.6373, z: -384.18088}
-  - P1: {x: 15.68322, y: 381.6373, z: -384.18088}
-    P2: {x: 26.18322, y: 393.4373, z: -384.18088}
-    P3: {x: 4.7832203, y: 390.1373, z: -384.18088}
-    P4: {x: 15.68322, y: 401.6373, z: -384.18088}
-  - P1: {x: 15.68322, y: 401.6373, z: -384.18088}
-    P2: {x: 26.18322, y: 413.4373, z: -384.18088}
-    P3: {x: 4.7832203, y: 410.1373, z: -384.18088}
-    P4: {x: 15.68322, y: 421.6373, z: -384.18088}
-  - P1: {x: 15.68322, y: 421.6373, z: -384.18088}
-    P2: {x: 26.18322, y: 433.4373, z: -384.18088}
-    P3: {x: 4.7832203, y: 430.1373, z: -384.18088}
-    P4: {x: 15.68322, y: 441.6373, z: -384.18088}
-  - P1: {x: 15.68322, y: 441.6373, z: -384.18088}
-    P2: {x: 26.18322, y: 453.4373, z: -384.18088}
-    P3: {x: 4.7832203, y: 450.1373, z: -384.18088}
-    P4: {x: 15.68322, y: 461.6373, z: -384.18088}
 --- !u!4 &91748957
 Transform:
   m_ObjectHideFlags: 0
@@ -346,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bizieCurveMover:
     bizieCurve: {fileID: 91748956}
-  speed: 1
+  speed: 0.2
 --- !u!212 &942311941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -407,7 +391,7 @@ Transform:
   m_GameObject: {fileID: 942311939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.734281, y: 54.01, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -562,7 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bizieCurveMover:
     bizieCurve: {fileID: 91748956}
-  speed: 1
+  speed: 0.2
 --- !u!212 &1293460149
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -623,7 +607,7 @@ Transform:
   m_GameObject: {fileID: 1293460147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.734281, y: 54.01, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3

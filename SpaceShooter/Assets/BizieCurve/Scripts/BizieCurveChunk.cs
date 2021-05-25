@@ -1,32 +1,26 @@
-using System.Collections;
 using UnityEngine;
 using UnityEditor;
 
 [System.Serializable]
 public class BizieCurveChunk
 {
-    #region Editor fields
+    #region Points
     public Vector3 P1 = new Vector3(0, 0, 0);
     public Vector3 P2 = new Vector3(10.5f, 11.8f, 0);
     public Vector3 P3 = new Vector3(-10.9f, 8.5f, 0);
     public Vector3 P4 = new Vector3(0, 20, 0);
     #endregion
 
-    #region lambdes
     public Vector3 GetLastPoint => P4;
-    #endregion
 
     private Vector3 _pivot = new Vector3(0, 0, 0);
 
-    #region Constructors
+    #region Constructor
     public BizieCurveChunk(Vector3 pivot)
     {
         _pivot = pivot;
         Initialize();
     }
-
-    public BizieCurveChunk() { }
-    #endregion
 
     public void Initialize()
     {
@@ -35,14 +29,11 @@ public class BizieCurveChunk
         P3 = P3 + _pivot;
         P4 = P4 + _pivot;
     }
+    #endregion
 
-    #region Public bezie methods
-    public (Vector3 point, bool isEnd) GetPoint(float time)
+    public bool HasEnd(float time)
     {
-        Vector3 point = GetPointInDistance(time);
-        bool isEnd = HasEnd(point);
-
-        return (point, isEnd);
+        return GetPoint(time).end;
     }
 
     public bool HasEnd(Vector3 position)
@@ -50,24 +41,56 @@ public class BizieCurveChunk
         return Vector3.Distance(position, P4) == 0 ? true : false;
     }
 
-    public Quaternion GetRotation(float time)
+    public (Vector3 point, bool end) GetPoint(float time)
     {
-        return Quaternion.LookRotation(GetFirstDerivative(time));
+        Vector3 point = GetPointInDistance(time);
+        bool end = HasEnd(point);
+
+        return (point, end);
     }
 
-    public Vector3 GetFirstDerivative(float time)
+    public (Quaternion angle, bool end) GetRotation(float time)
+    {
+        Quaternion angle = Quaternion.LookRotation(GetFirstDerivative(time));
+        bool end = HasEnd(time);
+
+        return (angle, end);
+    }
+
+    public (Vector3 direction, bool end) GetDirection(float time)
+    {
+        Vector3 direction = GetFirstDerivative(time);
+        bool end = HasEnd(time);
+
+        return (direction, end);
+    }
+
+
+    private Vector3 GetFirstDerivative(float time)
     {
         time = Mathf.Clamp01(time);
         float oneMinusT = 1f - time;
 
-        return
-            3f * oneMinusT * oneMinusT * (P2 - P1) +
+        Vector3 derivative = 3f * oneMinusT * oneMinusT * (P2 - P1) +
             6f * oneMinusT * time * (P3 - P2) +
             3f * time * time * (P4 - P3);
-    }
-    #endregion
 
-    #region Editor
+        return derivative;
+    }
+
+    private Vector3 GetPointInDistance(float time)
+    {
+        time = Mathf.Clamp01(time);
+        float oneMinusT = 1f - time;
+
+        Vector3 point = oneMinusT * oneMinusT * oneMinusT * P1 +
+            3f * oneMinusT * oneMinusT * time * P2 +
+            3f * oneMinusT * time * time * P3 +
+            time * time * time * P4;
+
+        return point;
+    }
+
     [DrawGizmo(GizmoType.Active)]
     public void DrawGizmo()
     {
@@ -83,19 +106,5 @@ public class BizieCurveChunk
 
             preveousePoint = point;
         }
-    }
-    #endregion
-
-    private Vector3 GetPointInDistance(float time)
-    {
-        time = Mathf.Clamp01(time);
-        float oneMinusT = 1f - time;
-
-        Vector3 point = oneMinusT * oneMinusT * oneMinusT * P1 +
-            3f * oneMinusT * oneMinusT * time * P2 +
-            3f * oneMinusT * time * time * P3 +
-            time * time * time * P4;
-
-        return point;
     }
 }

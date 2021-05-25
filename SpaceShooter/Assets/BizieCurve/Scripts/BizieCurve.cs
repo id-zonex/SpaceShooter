@@ -5,6 +5,7 @@ using UnityEngine;
 public class BizieCurve : MonoBehaviour
 {
     [SerializeField] private List<BizieCurveChunk> spawnedCurveChanks = new List<BizieCurveChunk>();
+
     public List<BizieCurveChunk> SpawnedCurveChanks => spawnedCurveChanks;
 
     private BizieCurveChunk _getLastChunk => spawnedCurveChanks[spawnedCurveChanks.Count - 1];
@@ -13,19 +14,29 @@ public class BizieCurve : MonoBehaviour
     {
         CheckChunks();
     }
-
-    public (Vector3 point, bool isEnd) GetPoint(float time, int currentCurve)
+    
+    public (Vector3 point, bool end) GetPoint(float time, int currentCurve)
     {
-        currentCurve = Mathf.Clamp(currentCurve, 0, spawnedCurveChanks.Count - 1);
-        BizieCurveChunk chunk = spawnedCurveChanks[currentCurve];
-
+        BizieCurveChunk chunk = GetChunk(currentCurve);
         return chunk.GetPoint(time);
+    }
+
+    public (Vector3 derivative, bool end) GetDirection(float time, int currentCurve)
+    {
+        BizieCurveChunk chunk = GetChunk(currentCurve);
+        return chunk.GetDirection(time);
+    }
+
+    public (Quaternion angle, bool end) GetRotation(float time, int currentCurve)
+    {
+        BizieCurveChunk chunk = GetChunk(currentCurve);
+        return chunk.GetRotation(time);
     }
 
     #region Editor Buttons
     public void SpawnNextChunk()
     {
-        SpawnChunk(_getLastChunk.GetLastPoint, Quaternion.identity, transform);
+        SpawnChunk(_getLastChunk.GetLastPoint);
     }
 
     public void Remove()
@@ -35,7 +46,7 @@ public class BizieCurve : MonoBehaviour
     #endregion
 
     #region SpawnChunk
-    private BizieCurveChunk SpawnChunk(Vector3 position, Quaternion rotation, Transform parent)
+    private BizieCurveChunk SpawnChunk(Vector3 position)
     {
         BizieCurveChunk chunk = new BizieCurveChunk(position);
         spawnedCurveChanks.Add(chunk);
@@ -50,13 +61,21 @@ public class BizieCurve : MonoBehaviour
 
         return chunk;
     }
+    #endregion
+
+    private BizieCurveChunk GetChunk(int currentCurve)
+    {
+        currentCurve = Mathf.Clamp(currentCurve, 0, spawnedCurveChanks.Count - 1);
+        BizieCurveChunk chunk = spawnedCurveChanks[currentCurve];
+
+        return chunk;
+    }
 
     private void CheckChunks()
     {
         if (spawnedCurveChanks.Count == 0)
             SpawnChunk();
     }
-    #endregion
 
     private void OnDrawGizmos()
     {
